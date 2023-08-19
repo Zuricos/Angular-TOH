@@ -1,5 +1,7 @@
 # AngularTourOfHeroes
 
+This Repo is a Work In Progress Repo so i can run the tutorial on different devices.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Development server
