@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {Hero} from '../interfaces/hero'
+import { Hero } from '../interfaces/hero'
+import { HEROES } from '../mock/mock-heroes'
 
 @Component({
   selector: 'app-heroes',
@@ -7,8 +8,10 @@ import {Hero} from '../interfaces/hero'
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-  hero : Hero = {
-    id: 1,
-    name: 'WindStorm'
-  };
+  selectedHero?: Hero;
+  heroes: Hero[] = HEROES;
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
